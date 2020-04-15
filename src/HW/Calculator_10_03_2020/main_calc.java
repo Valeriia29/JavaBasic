@@ -1,4 +1,4 @@
-package HW.CALC_10_03_2020;
+package HW.Calculator_10_03_2020;
 
 import java.util.Scanner;
 

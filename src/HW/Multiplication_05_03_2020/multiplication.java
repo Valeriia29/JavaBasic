@@ -1,11 +1,11 @@
-package HW;
+package HW.Multiplication_05_03_2020;
 
 import java.util.Scanner;
 import static java.lang.Math.pow;
 import java.util.Scanner;
 import static java.lang.Math.pow;
 
-public class multiplication_05_03_2020 {
+public class multiplication {
 
     public static   double Left(double a,double b){
             return pow(a,2)+2*a*b+pow(b,2);

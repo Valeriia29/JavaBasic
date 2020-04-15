@@ -1,4 +1,4 @@
-package HW.CALC_10_03_2020;
+package HW.Calculator_10_03_2020;
 
 public class Calc {
     public static double SUM(double var1,double var2)
