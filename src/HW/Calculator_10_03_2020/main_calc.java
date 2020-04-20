@@ -3,7 +3,7 @@ package HW.Calculator_10_03_2020;
 import java.util.Scanner;
 
 public class main_calc {
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите a");

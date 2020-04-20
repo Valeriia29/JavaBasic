@@ -1,29 +1,14 @@
-import Animal.Tiger;
-import Animal.Tiger2;
-
+import HW.Calculator_10_03_2020.*;
+import HW.StreetEquals_16_04_2020.Street;
+import HW.StreetEquals_16_04_2020.StreetEqual;
+import lessons.EqualsLesson;
+import lessons.NullLesson;
 public class StartPoint {
     public static void main(String[] args) {
-        System.out.println("current tiger counter - " + Tiger.tigerCounter);
 
-        Tiger tiger= new Tiger();
-        System.out.println("current tiger counter - " + Tiger.tigerCounter);
-        System.out.println(" tiger counter:" + tiger.getCurrentCounter());
-        System.out.println("tiger name=" + tiger.name);
-        tiger.addOneMore();
-        tiger.name="Ben";
-        System.out.println(" tiger counter:" + tiger.getCurrentCounter());
-        System.out.println("tiger name=" + tiger.name);
+        //NullLesson.startLessonExample();
+       // main_calc.main();
+        // EqualsLesson.StartLessonExample();
+        StreetEqual.StartStreetEqual();
 
-
-        Tiger anotherTiger=new Tiger();
-        System.out.println("current tiger counter - " + Tiger.tigerCounter);
-        System.out.println("Another tiger counter:" + anotherTiger.getCurrentCounter());
-        System.out.println("another tiger name="+anotherTiger.name);
-
-        new Tiger();
-        new Tiger();
-        System.out.println("current tiger counter - " + Tiger.tigerCounter);
-
-
-    }
-}
+    }}

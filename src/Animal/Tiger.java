@@ -13,7 +13,7 @@ public class Tiger {
 
      public  void addOneMore()
      {
-         kittenCount=kittenCount+1;
+                  kittenCount=kittenCount+1;
      }
      public int getCurrentCounter()
      {
