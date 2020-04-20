@@ -3,7 +3,7 @@ package HW.StreetEquals_16_04_2020;
 import java.util.Objects;
 
 public class Street {
-
+//
     String name;
     String description;
     String key;
