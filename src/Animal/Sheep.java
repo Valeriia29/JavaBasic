@@ -5,12 +5,14 @@ import java.util.Objects;
 /**
  * Наследник класса Object. Как и все классы неявно в java.
  */
-public class Sheep extends Object {
+public class Sheep extends Animal
+        {
     private String name = "default name";
 
     private int countLegs = 4;
 
     public Sheep() {
+        super();
         System.out.println("Hi!!");
     }
 
@@ -75,6 +77,9 @@ public class Sheep extends Object {
         }
 
     }
+            public void drink(){
+                System.out.println("sheep drink");
+            }
 
 
 }
