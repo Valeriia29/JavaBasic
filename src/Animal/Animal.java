@@ -2,18 +2,28 @@ package Animal;
 
 public abstract class Animal
 {
-    public Animal(){
+
+    public Animal()
+    {
         super();
-        System.out.println("Animal constructor");
+       // System.out.println("Animal constructor");
     }
-    public void eat(){
+
+
+    public void eat()
+    {
         System.out.println("animal eat");
     }
-    public void drink(){
+
+    public void drink()
+    {
         System.out.println("animal drink");
     }
 
-    public void run(){
+    public void run()
+    {
         System.out.println("animal run");
     }
+
+    public abstract boolean isCanSpeak();
 }

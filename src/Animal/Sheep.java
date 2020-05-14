@@ -6,22 +6,25 @@ import java.util.Objects;
  * Наследник класса Object. Как и все классы неявно в java.
  */
 public class Sheep extends Animal
-        {
-    private String name = "default name";
+{
+    public String name = "default name";
 
     private int countLegs = 4;
 
-    public Sheep() {
+    public Sheep()
+    {
         super();
-        System.out.println("Hi!!");
+        //System.out.println("Hi!! Sheep constructor");
     }
 
-    public Sheep(String newName, int countLegs) {
+    public Sheep(String newName, int countLegs)
+    {
         this(newName);
         this.countLegs = countLegs;
     }
 
-    public Sheep(String newName) {
+    public Sheep(String newName)
+    {
         this();
         name = newName;
     }
@@ -31,33 +34,20 @@ public class Sheep extends Animal
      *
      * @return данные об экземпляре класса в удобном для человека виде.
      */
-    public String toString() {
+    public String toString()
+    {
         return "Sheep{" +
                 "name='" + name + '\'' +
                 ", countLegs=" + countLegs +
                 '}';
     }
 
-//    public boolean equals(final Object o)
-//    {
-//
-//        System.out.println("equals start: current obj = " + this + "; parameter object ==" + o);
-//        Sheep oSheep= (Sheep) o;
-//        if (this.countLegs == oSheep.countLegs)
-//        {
-//            return true;
-//        }
-//        else
-//        {
-//            return false;
-//        }}
-
-
-    @Override
-    public boolean equals(Object o) {
-        System.out.println("equals start: current obj = " + this + "; parameter object ==" + o);
-        if (this == o) {
-            System.out.println("link equals");
+    public boolean equals(final Object o)
+    {
+        System.out.println("current object = " + this.toString() + "; parameter object == " + o);
+        if (this == o)
+        {
+            System.out.println("links equals");
             return true;
         }
         if (o == null || getClass() != o.getClass())
@@ -65,9 +55,9 @@ public class Sheep extends Animal
             System.out.println("parameter 0 = " + o);
             return false;
         }
-        final Sheep sheep = (Sheep) o;
-        System.out.println("59 strings");
-        if (this.countLegs == sheep.countLegs && this.name == sheep.name)
+
+        final Sheep sheep = (Sheep)o;
+        if (this.countLegs == sheep.countLegs && Objects.equals(this.name, sheep.name))
         {
             return true;
         }
@@ -75,14 +65,26 @@ public class Sheep extends Animal
         {
             return false;
         }
+    }
+
+    public void drink()
+    {
+        System.out.println("sheep drink");
+    }
+
+    @Override
+    public boolean isCanSpeak()
+    {
+        return true;
+    }
+
+    public void drink(String a)
+    {
 
     }
-            public void drink(){
-                System.out.println("sheep drink");
-            }
 
-
+    public void doIt()
+    {
+        System.out.println("doIT");
+    }
 }
-
-
-
